@@ -1,0 +1,803 @@
+/* font-family: 'Nothing You Could Do', cursive; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.5rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+:root {
+    --white-color: #fff;
+    --primary-color: #FF4A52;
+    --second-color: #1EC6B6;
+}
+
+.header {
+    height: 90px;
+    width: 100%;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1111;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-link-logo {
+    padding: 0 30px;
+    border-right: 1px solid red;
+}
+
+.header-nav {
+    display: flex;
+    padding-left: 10px;
+    margin-bottom: 0;
+}
+
+.nav-item-down li h3,
+.nav-item {
+    list-style: none;
+    padding: 0 20px;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.nav-item-down li {
+    padding: 10px;
+}
+
+.nav-item-down {
+    position: absolute;
+    top: 215%;
+    left: 0;
+    min-width: 220px;
+    background-color: var(--white-color);
+    display: none;
+    border-radius: 2px;
+    transition: ease 0.3s;
+    z-index: 11;
+    padding-left: 0;
+}
+
+.nav-item-down::before {
+    content: "";
+    top: -40%;
+    right: 53%;
+    position: absolute;
+    background-color: transparent;
+    height: 38px;
+    width: 40%;
+}
+
+.nav-item-down li:hover h3 {
+    color: var(--second-color);
+    transition: ease 0.3s;
+
+}
+
+.nav-item:hover .nav-item-down {
+    display: block;
+}
+
+.nav-item-down li {
+    list-style: none;
+}
+
+.nav-item h3 {
+    cursor: pointer;
+}
+
+.nav-item:hover>h3 {
+    color: var(--second-color);
+    transition: ease 0.3s;
+
+}
+
+.nav-item-icon {
+    font-size: 1.2rem;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.header-phone {
+    padding-right: 10px;
+    font-size: 1.75rem;
+    border-right: 1px solid red;
+}
+
+.header-phone-icon {
+    padding: 0 5px;
+    color: var(--primary-color);
+}
+
+.header-socials {
+    padding: 0 10px;
+    margin-bottom: 0;
+}
+
+.header-socials {
+    display: flex;
+}
+
+
+.socials-item {
+    list-style: none;
+    padding: 0 10px;
+    font-size: 1.75rem;
+    cursor: pointer;
+}
+
+.socials-item:hover .socials-item-icon {
+    color: var(--primary-color);
+    transition: ease 0.3s;
+
+}
+
+
+.header-search {
+    margin-left: 10px;
+    height: 100%;
+    background-color: var(--primary-color);
+    width: 100px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-search-icon {
+    font-size: 1.75rem;
+    color: var(--white-color);
+}
+
+.slider {
+    /* height: 100vh; */
+    margin-top: 90px;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-item {
+    width: 100%;
+}
+
+.slider-content {
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+
+.content-sub {
+    color: var(--white-color);
+    font-size: 2.3rem;
+}
+
+.btn-explore {
+    width: 170px;
+    height: 55px;
+    background-color: var(--second-color);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+.btn-explore:hover {
+    background-color: var(--primary-color);
+    transition: ease 0.3s;
+}
+
+.content-title-place {
+    font-family: 'Nothing You Could Do', cursive;
+    color: var(--white-color);
+    font-size: 15rem;
+    line-height: 0.9;
+}
+
+.travel-go {
+    height: 150px;
+    width: 100%;
+    background-color: #040e27;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.travel-go-title {
+    font-size: 2.8rem;
+    color: var(--white-color);
+    padding-right: 20px;
+}
+
+.travel-go-option {
+    display: flex;
+}
+
+.travel-go-option input,
+.travel-go-option select {
+    height: 50px;
+    width: 220px;
+    border-radius: 6px;
+    display: block;
+    margin: 0 5px;
+    background-color: transparent;
+    border: 1px solid #2f384c;
+    font-size: 1.7rem;
+    padding-left: 15px;
+    color: #53616b;
+}
+
+.travel-go-op {
+    padding: 20px;
+}
+
+
+
+.travel-go-btn {
+    height: 50px;
+    width: 130px;
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 50px;
+    margin-left: 5px;
+}
+
+.travel-go-btn:hover {
+    background-color: var(--second-color);
+    transition: ease 0.3s;
+}
+
+.travel-popular-destination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 120px 0;
+}
+
+.travel-place-visit:hover .place-visit-price {
+    background-color: var(--primary-color);
+    transition: ease 0.3s;
+}
+
+.travel-place-visit:hover .place-visit-country {
+    color: var(--primary-color);
+    transition: ease 0.3s;
+}
+
+.travel-place-visit:hover .place-visit-infor {
+    box-shadow: 0 0 12px rgb(182, 180, 180);
+    transition: ease-in 0.3s;
+}
+
+.travel-des-title {
+    font-size: 3.4rem;
+    margin-bottom: 16px;
+}
+
+.travel-des-sub {
+    width: 500px;
+    line-height: 28px;
+    color: #7A838B;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.6rem;
+    font-weight: 450;
+}
+
+.travel-place {
+    padding: 10px 20px;
+}
+
+.travel-place-item {
+    position: relative;
+    height: 260px;
+    width: 350px;
+}
+
+.place-item-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.place-item-infor {
+    position: absolute;
+    bottom: 24px;
+    display: flex;
+    margin-left: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+.place-item-amount {
+    z-index: 1;
+    background-color: var(--second-color);
+    border-radius: 18px;
+    padding: 3px 12px;
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.place-item-name {
+    font-size: 2rem;
+    font-weight: 600;
+    padding-right: 20px;
+    color: var(--white-color);
+    z-index: 1;
+    margin-bottom: 0;
+}
+
+.travel-grid-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 14px;
+}
+
+.travel-grid-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.travel-place-item:hover .place-item-name {
+    color: var(--primary-color);
+    transition: ease 0.3s;
+}
+
+.travel-place-item:hover .place-item-amount {
+    background-color: var(--primary-color);
+    transition: ease 0.3s;
+}
+
+.travel-place-item:hover {
+    transform: translateY(-9px);
+    transition: ease 0.8s;
+}
+
+.travel-place-item::before {
+    content: '';
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    background: -webkit-linear-gradient(top, rgba(4, 14, 39, 0) 0%, rgba(4, 14, 39, 0.7) 100%);
+    background: linear-gradient(to bottom, rgba(4, 14, 39, 0) 0%, rgba(4, 14, 39, 0.7) 100%);
+    ;
+}
+
+.travel-subscribe-our {
+    position: relative;
+    width: 100%;
+    height: 270px;
+    background-image: url('https://preview.colorlib.com/theme/travelo/img/banner/newsletter.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.travel-sub-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.travel-sub-mail {
+    width: 430px;
+    height: 58px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 2rem;
+    z-index: 1;
+    outline: none;
+
+}
+
+.travel-sub-btn {
+    height: 58px;
+    background-color: var(--primary-color);
+    width: 120px;
+    text-align: center;
+    line-height: 58px;
+    font-size: 1.8rem;
+    color: var(--white-color);
+    font-weight: 500;
+    border-radius: 6px;
+    margin-left: 20px;
+    z-index: 1;
+
+}
+
+.travel-sub-btn:hover {
+    background-color: var(--second-color);
+    transition: ease 0.3s;
+}
+
+.travel-sub-text {
+    margin-right: 56px;
+    z-index: 1;
+
+}
+
+.travel-sub-title {
+    color: var(--white-color);
+    font-size: 3.3rem;
+    z-index: 1;
+}
+
+.travel-sub-more {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #aab1b2;
+}
+
+.travel-subscribe-our::before {
+    content: " ";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(4, 14, 39, 0.7);
+    position: absolute;
+    z-index: 0;
+}
+
+.travel-popular-places {
+    height: 500px;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 300px;
+}
+
+.place-visit-infor {
+    width: 100%;
+    padding: 16px;
+    height: 132px;
+    background-color: var(--white-color);
+    border-radius: 0 0 6px 6px;
+}
+
+.travel-place-visit {
+    position: relative;
+    margin: 20px;
+}
+
+.place-about-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.place-visit-country {
+    font-size: 2.2rem;
+    font-weight: 450;
+    margin-bottom: 0;
+}
+
+.place-visit-united {
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding-bottom: 15px;
+    padding-top: 3px;
+    color: #94838b;
+}
+
+.place-visit-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-review-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #94838b;
+}
+
+.place-visit-img {
+    border-radius: 6px 6px 0 0;
+}
+
+.place-about-review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-review-star {
+    color: #fdae5c;
+    font-size: 1.2rem;
+    margin-right: 6px;
+}
+
+.place-visit-price {
+    position: absolute;
+    top: 20px;
+    margin-left: 20px;
+    background-color: var(--second-color);
+    height: 31px;
+    width: 76px;
+    border-radius: 21px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.place-about-time p {
+    margin-left: 6px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #94838b;
+}
+
+.place-about-time i {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    margin-top: 1px;
+    color: rgb(148, 147, 147);
+}
+
+.travel-popular-places {
+    width: 100%;
+    height: 520px;
+    background-color: #f7fafd;
+}
+
+.popular-places-btn {
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 1.8rem;
+    width: 180px;
+    border-radius: 12px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    margin-top: 47px;
+}
+
+.popular-places-btn:hover {
+    background-color: var(--second-color);
+    transition: ease 0.3s;
+}
+
+.travel-enjoy-video {
+    height: 600px;
+    width: 100%;
+    margin-top: 350px;
+    position: relative;
+}
+
+.travel-video-img {
+    height: 600px;
+    width: 100%;
+}
+
+.travel-video {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.travel-video-sub {
+    font-size: 9rem;
+    font-family: 'Nothing You Could Do', cursive;
+    color: var(--white-color);
+    font-weight: 550;
+}
+
+.travel-video-btn {
+    background-color: var(--second-color);
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+.travel-video-btn::before {
+    content: ' ';
+    background-color: var(--second-color);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: pulse-border 1500ms ease-out infinite;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+@keyframes pulse-border {
+    0% {
+        opacity: 0;
+    }
+
+    60% {
+        border-color: 0.4;
+        transform: scale(1.2);
+    }
+}
+
+.video-btn-play {
+    color: var(--white-color);
+    font-size: 2.2rem;
+}
+
+.travel-more-service {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.travel-ser-photo {
+    width: 100%;
+    height: 90px;
+}
+
+.travel-ser-form {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.travel-ser-name {
+    font-size: 2.8rem;
+    margin-top: 40px;
+    font-weight: 450;
+}
+
+.travel-ser-recommed {
+    font-size: 1.8rem;
+    margin-top: 10px;
+    font-weight: 500;
+    color: #aab1b2;
+    width: 370px;
+}
+
+.travel-more-review {
+    height: 470px;
+    width: 100%;
+    background-color: #ccc;
+}
+
+.travel-review-item {
+    height: 470px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.travel-review-item.d-block.w-100 {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7fafd;
+}
+
+.travel-review-sub {
+    margin-top: 25px;
+    width: 700px;
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 500;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.travel-review-name {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #899199;
+}
+
+.travel-review-photo {
+    position: relative;
+}
+
+.travel-review-photo::before {
+    position: absolute;
+    top: 0;
+    right: -15px;
+    bottom: -12px;
+    width: 50px;
+    height: 50px;
+    content: " ";
+    font-family: "Flaticon";
+    text-align: center;
+    line-height: 50px;
+    background: #1EC6B6;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 17px;
+    z-index: 11;
+}
+
+.carousel-control-next.btn-review-slide,
+.carousel-control-prev.btn-review-slide {
+    background-color: #a4a4a4;
+    opacity: 1;
+}
+
+.more {
+    height: 500px;
+    width: 100%;
+    background-color: rgb(212, 136, 136);
+}
+
+p {
+    margin-bottom: 0 !important;
+}

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.2.1-web/css/all.min.css">
+    <!-- thư viện reset css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- thư viện bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Nhúng fonts từ gg fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Rubik:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <title>Travel</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-wrap">
+            <a href="#" class="header-link-logo">
+                <img src="https://preview.colorlib.com/theme/travelo/img/logo.png" alt="logo">
+            </a>
+            <ul class="header-nav">
+                <li class="nav-item">
+                    <h3>Home</h3>
+                </li>
+                <li class="nav-item">
+                    <h3>About</h3>
+                </li>
+                <li class="nav-item">
+                    <h3>Destination</h3>
+                </li>
+                <li class="nav-item">
+                    <h3>Pages
+                        <i class="nav-item-icon fa-solid fa-chevron-down"></i>
+
+                    </h3>
+                    <ul class="nav-item-down nav-item-down-pages">
+                        <li>
+                            <h3>Destinations details</h3>
+                        </li>
+                        <li>
+                            <h3>Elements</h3>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <h3>Blog
+                        <i class="nav-item-icon fa-solid fa-chevron-down"></i>
+                    </h3>
+                    <ul class="nav-item-down nav-item-down-blogs">
+                        <li>
+                            <h3>Blog</h3>
+                        </li>
+                        <li>
+                            <h3>Single-Blog</h3>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <h3>Contact</h3>
+                </li>
+            </ul>
+        </div>
+        <div class="header-wrap">
+            <h3 class="header-phone">
+                <i class="header-phone-icon fa-solid fa-phone"></i>
+                10(256)-928 256
+            </h3>
+            <ul class="header-socials">
+                <li class="socials-item">
+                    <i class=" socials-item-icon fa-brands fa-instagram"></i>
+                </li>
+                <li class="socials-item">
+                    <i class=" socials-item-icon fa-brands fa-facebook"></i>
+                </li>
+                <li class="socials-item">
+                    <i class=" socials-item-icon fa-brands fa-google-plus-g"></i>
+                </li>
+                <li class="socials-item">
+                    <i class=" socials-item-icon fa-brands fa-skype"></i>
+                </li>
+            </ul>
+            <button class="header-search">
+                <i class="header-search-icon fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </div>
+    <div class="slider">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="slider-content">
+                        <p class="content-title-place">Indonesia</p>
+                        <p class="content-sub">Pixel perfect design with awesome contents</p>
+                        <div class="btn-explore">Explore Now</div>
+                    </div>
+                    <img src="https://preview.colorlib.com/theme/travelo/img/banner/banner.png" class="d-block w-100"
+                        alt="...">
+                </div>
+                <div class="carousel-item">
+                    <div class="slider-content">
+                        <p class="content-title-place">Australia</p>
+                        <p class="content-sub">Pixel perfect design with awesome contents</p>
+                        <div class="btn-explore">Explore Now</div>
+                    </div>
+                    <img src="	https://preview.colorlib.com/theme/travelo/img/banner/banner2.png" class="d-block w-100"
+                        alt="...">
+                </div>
+                <div class="carousel-item">
+                    <div class="slider-content">
+                        <p class="content-title-place">Swizerland</p>
+                        <p class="content-sub">Pixel perfect design with awesome contents</p>
+                        <div class="btn-explore">Explore Now</div>
+                    </div>
+                    <img src="https://preview.colorlib.com/theme/travelo/img/banner/banner3.png" class="d-block w-100"
+                        alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="travel-go">
+        <p class="travel-go-title">Where you want to go?</p>
+        <div class="travel-go-option">
+            <input type="text" class="travel-go-palace" placeholder="Where to go?">
+            <input type="date" class="travel-go-date" placeholder="Date">
+            <select name="" id="" class="travel-go-type">
+                <option class="travel-go-op" value="">Travel type</option>
+                <option class="travel-go-op" value="">Some option</option>
+                <option class="travel-go-op" value="">Another option</option>
+            </select>
+            <div class="travel-go-btn">Search</div>
+        </div>
+    </div>
+    <div class="travel-popular-destination">
+        <h2 class="travel-des-title">Popular Destination</h2>
+        <p class="travel-des-sub">Suffered alteration in some form, by injected humour or good day randomised booth anim
+            8-bit hella wolf moon beard words.</p>
+        <div class="travel-grid-column">
+            <div class="travel-grid-row">
+                <div class="travel-place">
+                    <div class="travel-place-item">
+                        <img src="https://preview.colorlib.com/theme/travelo/img/destination/1.png" alt="photo"
+                            class="place-item-img">
+                        <div class="place-item-infor">
+                            <p class="place-item-name">Italy</p>
+                            <p class="place-item-amount">07 Places</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="travel-place">
+                    <div class="travel-place-item">
+                        <img src="https://preview.colorlib.com/theme/travelo/img/place/2.png" alt="photo"
+                            class="place-item-img">
+                        <div class="place-item-infor">
+                            <p class="place-item-name">Brazil</p>
+                            <p class="place-item-amount">03 Places</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="travel-place">
+                    <div class="travel-place-item">
+                        <img src="https://preview.colorlib.com/theme/travelo/img/destination/3.png" alt="photo"
+                            class="place-item-img">
+                        <div class="place-item-infor">
+                            <p class="place-item-name">America</p>
+                            <p class="place-item-amount">10 Places</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="travel-grid-row">
+                <div class="travel-place">
+                    <div class="travel-place-item">
+                        <img src="https://preview.colorlib.com/theme/travelo/img/destination/4.png" alt="photo"
+                            class="place-item-img">
+                        <div class="place-item-infor">
+                            <p class="place-item-name">Nepal</p>
+                            <p class="place-item-amount">02 Places</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="travel-place">
+                    <div class="travel-place-item">
+                        <img src="https://preview.colorlib.com/theme/travelo/img/destination/5.png" alt="photo"
+                            class="place-item-img">
+                        <div class="place-item-infor">
+                            <p class="place-item-name">Maldives</p>
+                            <p class="place-item-amount">02 Places</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="travel-place">
+                    <div class="travel-place-item">
+                        <img src="https://preview.colorlib.com/theme/travelo/img/destination/6.png" alt="photo"
+                            class="place-item-img">
+                        <div class="place-item-infor">
+                            <p class="place-item-name">Indonesia</p>
+                            <p class="place-item-amount">05 Places</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="travel-subscribe-our">
+        <div class="travel-sub-text">
+            <h1 class="travel-sub-title">Subscribe Our Newsletter</h1>
+            <p class="travel-sub-more">Subscribe newsletter to get offers and about new places to discover.</p>
+        </div>
+        <div class="travel-sub-box">
+            <input type="mail" placeholder="Your mail" class="travel-sub-mail">
+            <div class="travel-sub-btn">Subscribe</div>
+        </div>
+    </div>
+    <div class="travel-popular-places travel-popular-destination">
+        <h2 class="travel-des-title">Popular Places</h2>
+        <p class="travel-des-sub">Suffered alteration in some form, by injected humour or good day randomised booth anim
+            8-bit hella wolf moon beard words.</p>
+        <div class="travel-grid-column">
+            <div class="travel-grid-row">
+                <div class="travel-place-visit">
+                    <img src="https://preview.colorlib.com/theme/travelo/img/place/1.png" alt=""
+                        class="place-visit-img">
+                    <div class="place-visit-infor">
+                        <p class="place-visit-country">California</p>
+                        <p class="place-visit-united">United State of America</p>
+                        <div class="place-visit-about">
+                            <div class="place-about-review">
+                                <div class="about-review-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="about-review-text">(20 Review)</p>
+                            </div>
+                            <div class="place-about-time">
+                                <i class="fa-solid fa-clock"></i>
+                                <p>5 Days</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="place-visit-price">$500</div>
+                </div>
+                <div class="travel-place-visit">
+                    <img src="https://preview.colorlib.com/theme/travelo/img/place/2.png" alt=""
+                        class="place-visit-img">
+                    <div class="place-visit-infor">
+                        <p class="place-visit-country">Korola Megna</p>
+                        <p class="place-visit-united">United State of America</p>
+                        <div class="place-visit-about">
+                            <div class="place-about-review">
+                                <div class="about-review-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="about-review-text">(20 Review)</p>
+                            </div>
+                            <div class="place-about-time">
+                                <i class="fa-solid fa-clock"></i>
+                                <p>5 Days</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="place-visit-price">$500</div>
+                </div>
+                <div class="travel-place-visit">
+                    <img src="https://preview.colorlib.com/theme/travelo/img/place/3.png" alt=""
+                        class="place-visit-img">
+                    <div class="place-visit-infor">
+                        <p class="place-visit-country">London</p>
+                        <p class="place-visit-united">United State of America</p>
+                        <div class="place-visit-about">
+                            <div class="place-about-review">
+                                <div class="about-review-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="about-review-text">(20 Review)</p>
+                            </div>
+                            <div class="place-about-time">
+                                <i class="fa-solid fa-clock"></i>
+                                <p>5 Days</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="place-visit-price">$500</div>
+                </div>
+            </div>
+            <div class="travel-grid-row">
+                <div class="travel-place-visit">
+                    <img src="https://preview.colorlib.com/theme/travelo/img/place/4.png" alt=""
+                        class="place-visit-img">
+                    <div class="place-visit-infor">
+                        <p class="place-visit-country">Miami Beach</p>
+                        <p class="place-visit-united">United State of America</p>
+                        <div class="place-visit-about">
+                            <div class="place-about-review">
+                                <div class="about-review-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="about-review-text">(20 Review)</p>
+                            </div>
+                            <div class="place-about-time">
+                                <i class="fa-solid fa-clock"></i>
+                                <p>5 Days</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="place-visit-price">$500</div>
+                </div>
+                <div class="travel-place-visit">
+                    <img src="https://preview.colorlib.com/theme/travelo/img/place/5.png" alt=""
+                        class="place-visit-img">
+                    <div class="place-visit-infor">
+                        <p class="place-visit-country">California</p>
+                        <p class="place-visit-united">United State of America</p>
+                        <div class="place-visit-about">
+                            <div class="place-about-review">
+                                <div class="about-review-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="about-review-text">(20 Review)</p>
+                            </div>
+                            <div class="place-about-time">
+                                <i class="fa-solid fa-clock"></i>
+                                <p>5 Days</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="place-visit-price">$500</div>
+                </div>
+                <div class="travel-place-visit">
+                    <img src="https://preview.colorlib.com/theme/travelo/img/place/6.png" alt=""
+                        class="place-visit-img">
+                    <div class="place-visit-infor">
+                        <p class="place-visit-country">Saintmartine Iceland</p>
+                        <p class="place-visit-united">United State of America</p>
+                        <div class="place-visit-about">
+                            <div class="place-about-review">
+                                <div class="about-review-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="about-review-text">(20 Review)</p>
+                            </div>
+                            <div class="place-about-time">
+                                <i class="fa-solid fa-clock"></i>
+                                <p>5 Days</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="place-visit-price">$500</div>
+                </div>
+            </div>
+        </div>
+        <div class="popular-places-btn">More Places</div>
+    </div>
+    <div class="travel-enjoy-video">
+        <img src="https://preview.colorlib.com/theme/travelo/img/banner/video.png" alt="Photo enjoy video"
+            class="travel-video-img">
+        <div class="travel-video">
+            <p class="travel-video-sub">Enjoy Video</p>
+            <a href="https://www.youtube.com/watch?v=f59dDEk57i0" class="travel-video-btn">
+                <i class="video-btn-play fa-solid fa-play"></i>
+            </a>
+        </div>
+    </div>
+    <div class="travel-more-service">
+        <div class="travel-grid-row">
+            <div class="travel-ser-form travel-ser-journey">
+                <img src="https://preview.colorlib.com/theme/travelo/img/svg_icon/1.svg" alt="Comfortable Journey"
+                    class="travel-ser-photo">
+                <p class="travel-ser-name">Comfortable Journey</p>
+                <p class="travel-ser-recommed">A wonderful serenity has taken to the possession of my entire soul.</p>
+            </div>
+            <div class="travel-ser-form travel-ser-journey">
+                <img src="https://preview.colorlib.com/theme/travelo/img/svg_icon/2.svg" alt="Comfortable Journey"
+                    class="travel-ser-photo">
+                <p class="travel-ser-name">Luxuries Hotel</p>
+                <p class="travel-ser-recommed">A wonderful serenity has taken to the possession of my entire soul.</p>
+            </div>
+            <div class="travel-ser-form travel-ser-journey">
+                <img src="https://preview.colorlib.com/theme/travelo/img/svg_icon/3.svg" alt="Comfortable Journey"
+                    class="travel-ser-photo">
+                <p class="travel-ser-name">Travel Guide</p>
+                <p class="travel-ser-recommed">A wonderful serenity has taken to the possession of my entire soul.</p>
+            </div>
+        </div>
+    </div>
+    <div class="travel-more-review">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="travel-review-item d-block w-100">
+                        <img src="https://preview.colorlib.com/theme/travelo/img/testmonial/author.png"
+                            class="travel-review-photo">
+                        <div class="travel-review-icon"></div>
+                        <p class="travel-review-sub">
+                            "Working in conjunction with humanitarian aid agencies, we have supported programmes to help
+                            alleviate human suffering.
+                        </p>
+                        <p class="travel-review-name">- Tom Mouse</p>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <div class="travel-review-item d-block w-100">
+                        <img src="https://preview.colorlib.com/theme/travelo/img/testmonial/author.png"
+                            class="travel-review-photo">
+                        <div class="travel-review-icon"></div>
+                        <p class="travel-review-sub">
+                            "Working in conjunction with humanitarian aid agencies, we have supported programmes to help
+                            alleviate human suffering.
+                        </p>
+                        <p class="travel-review-name">- Tom Mouse</p>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <div class="travel-review-item d-block w-100">
+                        <img src="https://preview.colorlib.com/theme/travelo/img/testmonial/author.png"
+                            class="travel-review-photo">
+                        <div class="travel-review-icon"></div>
+                        <p class="travel-review-sub">
+                            "Working in conjunction with humanitarian aid agencies, we have supported programmes to help
+                            alleviate human suffering.
+                        </p>
+                        <p class="travel-review-name">- Tom Mouse</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev btn-review-slide" type="button"
+                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next btn-review-slide" type="button"
+                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="more"></div>
+    <!-- Js từ thư viện bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
