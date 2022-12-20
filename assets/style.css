@@ -590,7 +590,6 @@ html {
 .travel-popular-places {
     width: 100%;
     height: 520px;
-    background-color: #f7fafd;
 }
 
 .popular-places-btn {
@@ -788,7 +787,6 @@ html {
 
 .carousel-control-next.btn-review-slide,
 .carousel-control-prev.btn-review-slide {
-    background-color: #a4a4a4;
     opacity: 1;
 }
 
@@ -800,4 +798,195 @@ html {
 
 p {
     margin-bottom: 0 !important;
+}
+
+.travel-recent-trips {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 800px;
+}
+
+.travel-recent-trips-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.travel-recent-trips-form {
+    width: 350px;
+    height: 380px;
+    display: block;
+    padding: 0;
+    margin: 40px;
+}
+
+.travel-recent-photo {
+    height: 240px;
+    width: 350px;
+    border-radius: 6px;
+}
+
+.travel-recent-trips-form {
+    position: relative;
+}
+
+.travel-recent-name {
+    position: absolute;
+    top: 67%;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #7c848c;
+}
+
+.travel-recent-recommed {
+    position: absolute;
+    top: 75%;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+.travel-recent-recommed:hover {
+    color: var(--primary-color);
+    transition: ease 0.3s;
+}
+
+.travel-footer {
+    height: 610px;
+    width: 100%;
+    background-color: #040e27;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.travel-infor-name {
+    color: var(--white-color);
+    font-size: 2.6rem;
+    margin-bottom: 46px;
+}
+
+.travel-footer a {
+    text-decoration: none;
+    color: #AAB1B7;
+    font-size: 1.8rem;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.travel-footer-form {
+    width: 1300px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.travel-infor-company-link {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.travel-infor-img {
+    width: 180px;
+    height: 53px;
+}
+
+.travel-infor-more {
+    width: 280px;
+}
+
+.travel-infor-location {
+    color: #AAB1B7;
+    margin: 50px 0;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.travel-infor-number {
+    margin: 10px 0;
+    font-weight: 500;
+    padding: 7px 0;
+    display: block;
+}
+
+.travel-contact-mail {
+    color: #AAB1B7;
+    margin: 10px 0;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.travel-footer a:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+.travel-infor-icon {
+    margin-top: 50px;
+}
+
+.travel-infor-icon-item {
+    color: #AAB1B7;
+    font-size: 2rem;
+    margin: 0 17px;
+}
+
+.travel-infor-icon-item:hover {
+    color: var(--primary-color);
+    transition: ease 0.3s;
+}
+
+.travel-infor-icon-item.fa-brands.fa-facebook {
+    margin-left: -1px;
+}
+
+.infor-company-link {
+    margin: 10px 0;
+}
+
+.travel-infor-des-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.travel-des-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.popular-ig-img {
+    border-radius: 6px;
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+.popular-ig-footer-img {
+    margin-left: -8px;
+}
+
+.border-footer {
+    border-top: 1px solid #363E52;
+    width: 1210px;
+    margin-left: -18px;
+    padding-bottom: 60px;
+}
+
+.sub-footer {
+    font-size: 1.9rem;
+    color: #AAB1B7;
+}
+
+.sub-footer a {
+    color: var(--primary-color);
 }
